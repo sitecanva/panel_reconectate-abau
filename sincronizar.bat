@@ -26,7 +26,7 @@ if errorlevel 1 (
     echo Creando confirmacion...
     git commit -m "Actualizacion automatica: %date% %time%"
     echo Subiendo cambios a GitHub...
-    git push origin main
+    git push origin main --force
     echo.
     echo Repositorio sincronizado exitosamente.
 ) else (
